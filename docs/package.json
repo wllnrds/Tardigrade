@@ -1,0 +1,15 @@
+{
+  "name": "tardigrade",
+  "version": "1.0.0",
+  "description": "Site Tardigrade",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Willian Rodrigues",
+  "license": "ISC",
+  "dependencies": {
+    "font-awesome": "^4.7.0",
+    "partbee": "^1.2.0"
+  }
+}

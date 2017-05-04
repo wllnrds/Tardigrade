@@ -1,0 +1,21 @@
+.ad-container{
+    position: relative;
+
+    &:before{
+        position: absolute;
+        content: "Publicidade";
+        text-transform: uppercase;
+        color: $color_soft;
+        font-size: 8px;
+        line-height: 10px;
+        height: 10px;
+        display: block;
+        left: 0px;
+        top: -10px;
+    }
+
+    .ad-item{
+        @include margin-height($md);
+        display: block;
+    }
+}

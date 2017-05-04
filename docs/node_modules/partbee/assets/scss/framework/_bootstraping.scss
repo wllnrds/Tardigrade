@@ -1,0 +1,69 @@
+@include noBootstrapStatus(false){
+    .form-control {
+        height: 40px;
+        padding: 9px 12px;
+        color: $color_text_default;
+        border: 1px solid $color_soft;
+        border-radius: 2px;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+        font: $font_text;
+        font-weight: 400;
+        font-size: 14px;
+    }
+
+    .form-horizontal {
+        .control-label {
+            padding-top: 12px;
+            font-weight: 400;
+        }
+    }
+
+    .pagination{
+        font: $font_text;
+
+        &>li{
+            &>a, &>span{
+                color: $c_alpha;
+                margin: 0px 2px;
+                padding: 10px 0px;
+                border-radius: 2px !important;
+                border-color: $color_soft;
+                line-height: 1;
+
+                @include transition(500ms);
+
+                &:hover,
+                &:focus{
+                    color: $color_text_contrast;
+                    background-color: $c_alpha;
+                    border-color: $c_alpha;
+                }
+            }
+        }
+
+        &>.active{
+            &>a, &>span{
+                &,
+                &:hover,
+                &:focus{
+                    background-color: $c_beta;
+                    border-color: darken($c_beta, 5%);
+                }
+            }
+        }
+
+        &>.disabled{
+            &>a, &>span{
+                &,
+                &:hover,
+                &:focus,
+                &.active{
+                    background-color: lighten($color_soft, 10%) !important;
+                    border-color: $color_soft !important;
+                    color: $color_soft !important;
+                }
+            }
+        }
+    }
+}

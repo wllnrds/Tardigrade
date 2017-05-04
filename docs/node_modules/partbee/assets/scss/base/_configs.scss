@@ -1,0 +1,24 @@
+$breakpoints: (
+    xs: ( label: "Mobile",         minQuery: "(min-width: 0px)",   rangeQuery: "(max-width: 480px)",                         maxQuery: "(max-width: 480px)", maxWidth: none),
+    sm: ( label: "Mobile Landing", minQuery: "(min-width: 481px)", rangeQuery: "(min-width: 481px) and (max-width: 768px)",  maxQuery: "(max-width: 768px)", maxWidth: none),
+    md: ( label: "Tablet",         minQuery: "(min-width: 769px)", rangeQuery: "(min-width: 769px) and (max-width: 1200px)", maxQuery: "(max-width: 1200px)",maxWidth: none),
+    lg: ( label: "PC",             minQuery: "(min-width: 1025px)",rangeQuery: "(min-width: 1025px) and (max-width: 1200px)",maxQuery: "(max-width: 1200px)",maxWidth: 960px),
+    xl: ( label: "Big resolutions",minQuery: "(min-width: 1201px)",rangeQuery: "(min-width: 1201px)",                        maxQuery: "(min-width: 1201px)",maxWidth: 68vw),
+);
+
+$breakpoints_bootstrap: (
+    xs: ( label: "xSmall resolutions",minQuery: "(min-width: 0px)",   maxQuery: "(max-width: 767px)", rangeQuery: "(max-width: 767px)",                        maxWidth: none ),
+    sm: ( label: "Small resolutions", minQuery: "(min-width: 768px)", maxQuery: "(max-width: 991px)", rangeQuery: "(min-width: 768px) and (max-width: 991px)", maxWidth: 750px),
+    md: ( label: "Medium resolutions",minQuery: "(min-width: 992px)", maxQuery: "(max-width: 1199px)",rangeQuery: "(min-width: 992px) and (max-width: 1199px)",maxWidth: 970px),
+    lg: ( label: "Large resolutions", minQuery: "(min-width: 1200px)",maxQuery: "(min-width: 1200px)",rangeQuery: "(min-width: 1200px)",                       maxWidth: 1170px),
+);
+
+// Grid System partBee
+$ignoreBootstrap: true;
+$width: 70px;
+$columns: 12;
+$gutter: 30px;
+
+@if($ignoreBootstrap ==  false){
+  $breakpoints: $breakpoints_bootstrap;
+}
